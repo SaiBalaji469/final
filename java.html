@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../style.css">
+    <style>
+        .accordion {
+            background-color: #fffee3;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+          
+        }
+        
+        .active, .accordion:hover {
+          background-color: #FFF78A;
+          /* border-bottom: #212529 solid 0.5px; */
+        }
+        
+        .panel {
+          padding: 0 18px;
+          background-color: rgb(237, 238, 219);
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+      
+        .b-color{
+            background-color:#fbeeac;
+}
+      body{
+        font-family: 'DM Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+      }
+      .pricing{
+        display: flex;
+        gap: 50px;
+      }
+      .price{
+        margin-left: 0;
+        margin-top: 30px;
+        height: 630px;
+        width: 430px;
+      }
+      .card-background{
+        background-color: #f6eec3;
+      }
+      .para{
+        width: 100%;
+      }
+      .sai{
+        display: flex;
+        justify-content: center;
+      }
+    button{
+    
+  box-shadow: 0 8px 6px -6px black;
+  box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
+
+
+    }
+        </style>
+    <title>Raudra</title>
+</head>
+<body class="b-color">
+  <div  style="overflow: hidden;">
+    <header class="p-3 text-bg-dark" >
+        <div class="container-fluid" >
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="Screenshot 2023-12-22 102324.png" height="40px" alt="">
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-warning"><b>Raudra</b></a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Buy a Course</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Study Material</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6"><div class="pricing">
+              <div class="p-5 text-center">
+                <div class="container py-5">
+                  <h1 class="heading mb-3" style="color: 
+                  #212529;">Java Programming Course</h1>
+                  <p class="col-lg-8 mx-auto lead para">
+                      <b>Discover the world of Java programming with our comprehensive course designed to cater to individuals at all skill levels. Whether you're new to coding or seeking to enhance your Java expertise, our course offers a structured learning experience to help you achieve your goals.
+                   </b>
+                  </p>
+                  <p class="col-lg-8 mx-auto lead para"><b>
+                    Our Java Programming course is carefully crafted to provide a solid foundation in Java, one of the most versatile and widely-used programming languages. From basic syntax to advanced concepts, you'll explore Java's functionalities and applications through a combination of theory and practical exercises. 
+                  </b></p>
+                </div>
+              </div>
+            </div></div>
+            <div class="col-md-6">  <div class="sai"><div class="card price card-background">
+              <img src="images/GATE LECTURES LIVE.png" class="card-img-top" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Java</h5>
+                <p class="card-text">We teach GATE lectures in the live classes.</p>
+              
+                  <h5>This Course Includes :</h5>
+                  <ul>
+                    <li>No Pre-requisite Required</li>
+                    <li>LIVE classes & mentorship sessions</li>
+                    <li>LIVE Revision & Doubts sessions</li>
+                    <li>with Doubt Assistance</li>
+                    <li>Test series</li>
+                  </ul>
+                <h4>₹5,000</h4>
+                <a href="gate.html" class="btn btn-warning">Enroll Now</a>
+              </div>
+            </div></div></div>
+    
+        </div></div>
+        </div>
+
+      </div>
+
+
+    
+
+      
+    <hr>
+
+
+      <div class="mx-4 pt-5">
+        <h2 class="pb-2 t-color mb-4 b-color"><b>Syllabus</b></h2><hr>
+       
+        </div>
+
+      <button class="accordion">Section 1: Applications of Java</button>
+<div class="panel"> 
+  <p>
+    <li>Java Architecture</li>
+    <li>Internal working of Java</li>
+    <li>Java Features </li>
+  </p>
+</div>
+
+<button class="accordion">Section 2: Setting up
+</button>
+<div class="panel">
+  <p>
+    <li>Setting up IDE for coding
+    </li>
+    <li>Setting up IDE for coding
+    </li>
+  </p>
+</div>
+
+
+
+<button class="accordion">Section 3: Dealing with Basics
+
+</button>
+<div class="panel">
+  <p>
+    <li>Variables</li>
+    <li>Data Types</li>
+    <li>Identifiers</li>
+    <li>Values</li>
+    <li>Operators</li>
+    <li>Scanner</li>
+    <li>Final</li>
+    <li>enums</li>
+    <li>Type casting</li>
+  </p>
+</div>
+
+
+
+<button class="accordion">Section 4: Structure of Java Code 
+</button>
+<div class="panel">
+  <p> <li>Class, Object & Method creation</li>
+    <li>this keyword</li>
+    <li>Constructor and it’s types </li></p>
+</div>
+
+  
+<button class="accordion">Section 5: Types of Variables and the static keyword
+
+</button>
+<div class="panel">
+  <p> <li>Types of variables – local, instance, static</li>
+    <li>Static keyword (Method, Blocks, Nested classes)</li>
+    </p>
+</div>
+
+<button class="accordion">Section 6: Control statements
+
+</button>
+<div class="panel">
+  <p>
+    <li>Conditional</li>
+    <li>Loop</li>
+    <li>Branching</li>
+</p>
+</div>
+
+
+<button class="accordion">Section 7: String
+</button>
+<div class="panel">
+  <p>
+    <li>String</li>
+    <li>StringBuffer and StringBuilder</li>
+    
+  </p>
+</div>
+
+<button class="accordion">Section 8: Arrays</button>
+<div class="panel">
+  <p><li>1D-Arrays</li>
+    <li>2D-Arrays</li>
+    </p>
+</div>
+
+
+<button class="accordion">Section 9: Package and Accessibility
+</button>
+<div class="panel">
+  <p><li>Package</li>
+    <li>Access Modifiers</li>
+    </p>
+</div>
+
+
+
+
+
+
+<button class="accordion">Section 10: Object Oriented Programming Principles
+
+</button>
+<div class="panel">
+  <p>
+    <li>Object Class</li>
+    <li>Inheritance</li>
+    <li>Polymorphism</li>
+    <li>Encapsulation</li>
+    <li>Abstraction, Abstract classes vs Interfaces</li>
+    <li>Some more OOPs principles – Aggregation, Composition </li>
+    <li>Wrapper Classes</li>
+  </p>
+</div>
+
+
+
+<button class="accordion">Section 11: Some more Concepts
+
+</button>
+<div class="panel">
+  <p>
+    <li>super keyword</li>
+    <li>Inner classes</li>
+    <li>Annotations</li>
+</p>
+</div>
+
+<button class="accordion">Section 12: Exception Handling
+</button>
+<div class="panel">
+  <p>
+    <li>try</li>
+    <li>catch</li>
+    <li>finally</li>
+    <li>throw</li>
+    <li>throws</li>
+</p>
+</div>
+<button class="accordion">Section 13: Collections
+
+</button>
+<div class="panel">
+  <p>
+    <li>Generics and Type-Safety</li>
+    <li>Collections</li>
+    <li>List</li>
+    <li>Set</li>
+    <li>Queue</li>
+    <li>Map</li>
+    <li>Iterators</li>
+    <li>Comparable</li>
+    <li>Comparator</li>
+</p>
+</div>
+<button class="accordion">Section 14: Java 8 Features
+</button>
+<div class="panel">
+  <p>
+    <li>Functional Interfaces</li>
+    <li>Lambda Expressions</li>
+    <li>Method References</li>
+    <li>Static and Default Methods in Interfaces</li>
+    <li>Streams</li>
+    <li>Java Time API (java.time package)</li>
+    <li>Optional class</li>
+
+</p>
+</div>
+
+
+<button class="accordion">Section 15: Garbage Collection
+</button>
+<div class="panel">
+  <p>
+    <li>Garbage Collection Algorithm</li>
+    <li>finalize() method</li>
+
+</p>
+</div>
+
+
+
+<button class="accordion">Section 16: I/O
+</button>
+<div class="panel">
+  <p>
+    <li>File Handling</li>
+    <li>Serialization and De-serialization</li>
+
+</p>
+</div>
+<button class="accordion">Section 17: Multithreading
+
+</button>
+<div class="panel">
+  <p>
+    <li>Thread coordination in multithreading</li>
+    <li>Performance optimization in multithreading</li>
+    <li>Data sharing between threads</li>
+    <li>Concurrency challenges and solutions</li>
+    <li>Advanced locking techniques</li>
+    <li>Inter-thread communication</li>
+    <li>Lock-free algorithms, data structures, and techniques</li>
+    <li>Threading models for high-performance IO</li>
+    <li>Virtual threads and high-performance</li>
+    <li>Beyond multithreading</li>
+</p>
+</div>
+
+<button class="accordion">Section 18: <b>Design Patterns</b></button>
+
+
+<button class="accordion">Section 18 A: Creational
+
+</button>
+<div class="panel">
+  <p>
+    <li>Singleton</li>
+    <li>Factory Method</li>
+    <li>Abstract Factory</li>
+    <li>Builder</li>
+    <li>Prototype</li>
+  
+</p>
+</div>
+
+<button class="accordion">Section 18 B: Structural
+
+</button>
+<div class="panel">
+  <p>
+    <li>Adapter</li>
+    <li>Bridge</li>
+    <li>Composite</li>
+    <li>Decorator</li>
+    <li>Facade</li>
+    <li>Flyweight</li>
+    <li>Proxy</li>
+    
+</p>
+</div>
+
+<button class="accordion">Section 18 C: Behavioural
+
+</button>
+<div class="panel">
+  <p>
+    <li>
+        Chain of Responsibility</li>
+    <li>Command
+    </li>
+    <li>Interpreter</li>
+    <li>Mediator</li>
+    <li>Memento</li>
+    <li>Observer</li>
+    <li>State</li>
+    <li>Strategy</li>
+    <li>Template Method</li>
+    <li>Visitor</li>
+</p>
+</div>
+
+
+
+
+
+
+
+
+<div class="mx-4 pt-5">
+  <h2 class="pb-2 t-color mb-4 b-color"><b>Meet your Faculty</b></h2>
+ 
+  </div>
+
+<hr>
+
+<div class="container py-4">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="images/ravi sir.jpg" alt="" class="ravi-sir1" height="150px">
+      <h2 class="fw-normal mt-3">Ravindrababu Ravula</h2>
+      <h5 class="fw-normal mt-3">ME, IISc</h5>
+     
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    
+</div>
+</div>
+
+
+
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top footer ">
+  <div class="col mb-3">
+    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <h5 class="text-white">©Ravindra Babu Ravula</h5>
+  </div>
+
+  <div class="col mb-3">
+
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+</footer> 
+</div>
+
+
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+      
+</body>
+</html>
+
+

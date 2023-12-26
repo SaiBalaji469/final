@@ -1,0 +1,56 @@
+.t-color{
+    color: #282120;
+}
+
+.text-color{
+    color: 
+    #fabd06;
+}
+.ravi-sir{
+    border-radius: 50%;
+    border: whitesmoke 7px solid;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+}
+
+
+
+
+.hero{
+    background-color: 
+    #dea705;
+  
+}
+
+
+.pad{
+    padding-top: 100px;
+}
+.b-color{
+    background-color: #FFF78A;
+}
+
+.card{
+    margin-top: 15px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    background-color: #fcf5ce;
+
+    
+}
+
+.shadow{
+   overflow: hidden;
+}
+
+.ravi-sir1{
+    
+    border-radius: 50%;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+}
+.footer{
+    background-color: 	#28282B;
+    color: aliceblue;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border:  black 2px solid;
+}

@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        .accordion {
+            background-color: #fffee3;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+          
+        }
+        
+        .active, .accordion:hover {
+          background-color: #FFF78A;
+          /* border-bottom: #212529 solid 0.5px; */
+        }
+        
+        .panel {
+          padding: 0 18px;
+          background-color: rgb(237, 238, 219);
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+        .heading{
+            text-decoration: underline;
+        }
+        .b-color{
+            background-color:#fbeeac;
+}
+      body{
+        font-family: 'DM Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+      }
+      .pricing{
+        display: flex;
+        gap: 50px;
+      }
+      .price{
+        margin-left: 0;
+        margin-top: 30px;
+        height: 600px;
+        width: 430px;
+      }
+      .card-background{
+        background-color: #f6eec3;
+      }
+      .para{
+        width: 100%;
+      }
+      button{
+    
+    box-shadow: 0 8px 6px -6px black;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
+  
+  
+      }
+      .sai{
+        display: flex;
+        justify-content: center;
+      }
+      .ravi-sir1{
+    
+    border-radius: 50%;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+}
+.footer{
+    background-color: 	#28282B;
+    color: aliceblue;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border:  black 2px solid;
+}
+   
+        </style>
+    <title>Raudra</title>
+</head>
+<body class="b-color">
+  <div  style="overflow: hidden;">
+    <header class="p-3 text-bg-dark" >
+        <div class="container-fluid" >
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="Screenshot 2023-12-22 102324.png" height="40px" alt="">
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-warning"><b>Raudra</b></a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Buy a Course</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Study Material</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6"><div class="pricing">
+              <div class="p-5 text-center">
+                <div class="container py-5">
+                  <h1 class="heading mb-3" style="color: 
+                  #212529;">Data Science</h1>
+                  <p class="col-lg-8 mx-auto lead para">
+                      <b>Unlock the power of data with our comprehensive Data Science course! Whether you're a beginner looking to delve into the world of data or an experienced professional aiming to enhance your skill set, our course is designed to cater to individuals at all levels.
+                   </b>
+                  </p>
+                  <p class="col-lg-8 mx-auto lead para"><b>
+                    Our Data Science course is meticulously crafted to provide you with a well-rounded understanding of key concepts, tools, and techniques essential in the field of data science. Through a combination of theoretical knowledge and hands-on practical sessions, you'll learn to extract meaningful insights from complex datasets and make data-driven decisions.
+                  </b></p>
+                </div>
+              </div>
+            </div></div>
+            <div class="col-md-6">
+              <div class="sai">
+              <div class="card price card-background">
+              <img src="images/GATE LECTURES LIVE.png" class="card-img-top" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">Data Science ( LIVE )</h5>
+                <p class="card-text">We teach Data Science concepts in LIVE classes.</p>
+              
+                  <h5>This Course Includes :</h5>
+                  <ul>
+                    <li>No Pre-requisite Required</li>
+                    <li>LIVE classes & mentorship sessions</li>
+                    <li>Hands on projects.</li>
+                    <li>with Doubt Assistance</li>
+                    <li>Test series</li>
+                  </ul>
+                <h4>₹30,000</h4>
+                <a href="#" class="btn btn-warning">Enroll Now</a>
+              </div>
+            </div></div></div>
+    
+        </div></div>
+        </div>
+
+      </div>
+
+
+    
+
+      
+    <hr>
+
+
+      <div class="mx-4 pt-5">
+        <h2 class="pb-2 t-color mb-4 b-color"><b>Syllabus</b></h2><hr>
+       
+        </div>
+
+        <button class="accordion"><b>Section 1: DATA SCIENCE FOUNDATIONS</b></button>
+        <button class="accordion">Section 1 A: Python for Data Science
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>Python Basics</li>
+            <li>Jupyternotebook – Installation & function</li>
+            <li>Python functions</li>
+            <li>packages Object oriented programming</li>
+            <li>Pandas, NumPy,
+              Matplotlib, Seaborn and
+              Plotly</li>
+        </p>
+        </div>
+       
+       
+        
+       
+        
+        
+       
+
+
+        <button class="accordion">Section 1 B: Statistics
+
+        </button>
+        <div class="panel">
+          <p>
+            <li> Descriptive Statistics</li>
+            <li> Introduction to
+              Probability</li>
+            <li>Probability Distributions</li>
+            <li>  Hypothesis Testing and
+              Estimation</li>
+            <li>Goodness of Fit</li>
+            <li>Analysis of Variance</li>
+            <li> Regression Analysis</li>
+     
+        </p>
+        </div>
+  
+        <button class="accordion">Section 1 C: SQL Programming
+
+        </button>
+        <div class="panel">
+          <p>
+            <li> Introduction to DBMS</li>
+            <li>ER diagram</li>
+            <li> Schema design</li>
+            <li>  Key constraints and basics
+              of normalization</li>
+            <li>Joins</li>
+            <li>Subqueries involving joins and aggregations</li>
+            <li>Sorting</li>
+            <li>Independent subqueries</li>
+            <li>Correlated subqueries</li>
+            <li>Analytic functions</li>
+            <li> Set operations</li>
+            <li> Grouping and filtering</li>
+        </p>
+        </div>
+        
+    
+        <button class="accordion">Section 1 D: Machine Learning and
+          Deep Learning
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>Introduction to Alpha
+              Mathematical</li>
+            <li>Foundations</li>
+            <li>ML terminology</li>
+        </p>
+        </div>
+        
+
+        <button class="accordion">Section 1 E: EDA
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>Data, Data Types, and
+              Variables</li>
+            <li> Central Tendency and
+              Dispersion</li>
+            <li>5 point summary and
+              skewness of data</li>
+            <li>Box-plot, covariance, and
+              Coeff of Correlation</li>
+            <li>Univariate and Multivariate
+              Analysis</li>
+            <li>Encoding Categorical Data</li>
+            <li>Scaling and Normalization</li>
+            <li>What is Preprocessing?</li>
+            <li>Imputing missing values</li>
+            <li>Working with Outliers</li>
+            <li>"pandas-profiling" Library</li>
+            <li>Feature Engineering</li>
+            <li>EDA Case Studies</li>
+        </p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        <button class="accordion"><b>Section 2: MACHINE LEARNING</b></button>
+        <button class="accordion">Section 2 A: Supervised Learning
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>Linear regression</li>
+            <li>Multiple regression</li>
+            <li>Logistic regression</li>
+            <li>K-NN classification</li>
+            <li>Naive Bayes classifiers</li>
+            <li>Support vector machines</li>
+
+        </p>
+        </div>
+
+        
+        
+       
+        
+        <button class="accordion">Section 2 B: Unsupervised Learning
+
+        </button>
+        <div class="panel">
+          <p>
+ 
+            <li>K-means clustering</li>
+            <li>Hierarchical clustering</li>
+            <li> High-dimensional
+              clustering</li>
+            <li>Dimension Reduction-PCA</li>
+      
+        </p>
+        </div>
+       
+        
+        
+        
+
+        <button class="accordion">Section 2 C: Tree Based models and
+          Ensemble Techniques
+
+        </button>
+        <div class="panel">
+          <p>
+    
+            <li>Decision Trees</li>
+            <li>Random Forests</li>
+            <li>Bagging</li>
+            <li>Boosting</li>
+        </p>
+        </div>
+        
+        <button class="accordion">Section 2 D: Model Selection and
+          Tuning
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>Feature engineering</li>
+            <li>Model selection and tuning</li>
+            <li>Model performance measures</li>
+            <li>Regularising Linear models</li>
+            <li>ML pipeline</li>
+            <li>Bootstrap sampling</li>
+            <li>Grid search CV</li>
+            <li>Randomized search CV</li>
+            <li>K fold cross-validation</li>
+        </p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+       
+       
+        
+
+        <button class="accordion">Section 2 E: Time Series Forecasting
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>Introduction to forecasting data</li>
+            <li>Definition and properties of
+              Time Series data</li>
+            <li>Examples of Time Series data</li>
+            <li>Features of Time Series data</li>
+            <li>Essentials for Forecasting</li>
+            <li>Missing data and Exploratory
+              analysis</li>
+            <li>Components of Time Series data</li>
+            <li>Naive, Average and Moving
+              Average Forecasting</li>
+            <li> Decomposition of Time Series
+              into Trend, Seasonality and
+              Residual</li>
+            <li> Validation set and Performance
+              Measures for a Time Series
+              model</li>
+            <li>Exponential Smoothing method
+              ARIMA Approach</li>
+   
+        </p>
+        </div>
+      
+       
+        
+        
+        
+
+        <button class="accordion">Section 2 F: Recommendation Systems
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>  Introduction to
+              Recommendation systems</li>
+            <li> Content
+              basedrecommendation system</li>
+            <li>Popularity based model</li>
+            <li>Collaborative filtering</li>
+            <li>Hybrid models</li>
+        </p>
+        </div>
+       
+
+        <button class="accordion">Section 2 G: Model Deployment</button>
+        <button class="accordion">Section 2 G: Model Deployment</button>
+        <div class="panel">
+          <p>
+            <li>Model Serialization</li>
+            <li>Updatable Classifiers</li>
+            <li>Batch mode</li>
+            <li>Real-time</li>
+            <li>Productionalization (Flask)</li>
+            <li> Docker (Containerization -
+              Developmental
+              environment) </li>
+            <li> Docker
+              (Containerization -
+              Productionalization)</li>
+      
+        </p>
+        </div>
+        
+        
+        
+    
+        <button class="accordion"><b>Section 3: BUSINESS INTELLIGENCE</b></button>
+        <button class="accordion">Section 3 A: Business Intelligence
+          Tool Tableau</button>
+        <div class="panel">
+          <p>
+            <li>Introduction to Tableau</li>
+            <li>Data Visualisations</li>
+            <li>Filters and Metadata</li>
+            <li>Data Analysis</li>
+            <li>Dashboards</li>
+            <li>LODs and Data Connections</li>
+        </p>
+        </div>
+
+
+        <button class="accordion">Section 3 B: Data Analysis in Excel
+
+        </button>
+        <div class="panel">
+          <p>
+           
+            <li>Excel Functionalities
+              </li>
+            <li>Data Analysis</li>
+        </p>
+        </div>
+
+
+        <button class="accordion">Section 3 C: Business Case Studies
+          
+          
+        </button>
+        <div class="panel">
+          <p>
+            <li>Guestimates and Case
+              studies</li>
+            <li>Problem Solving</li>
+        </p>
+        </div>
+
+
+        <button class="accordion">Section 3 D: BFSI ML Applications
+
+        </button>
+        <div class="panel">
+          <p>
+          
+            <li>BFSI Sector
+              </li>
+            <li>ML Applications</li>
+        </p>
+        </div>
+     
+        
+
+
+
+
+
+
+        
+        <button class="accordion"><b>Section 4: ARTIFICIAL INTELLIGENCE</b></button>
+        <button class="accordion">Section 4 A: Neural Networks and Deep Learning
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>Gradient Descent</li>
+            <li>Introduction to Perceptron &
+              Neural Networks</li>
+            <li>Batch Normalization</li>
+            <li>Activation and Loss functions</li>
+            <li>Hyper parameter tuning</li>
+            <li>Deep Neural Networks</li>
+            <li>Tensor Flow & Keras for
+              Neural Networks & Deep
+              Learning</li>
+    
+        </p>
+        </div>
+        <button class="accordion">Section 4 B: Computer Vision
+
+        </button>
+        <div class="panel">
+          <p>
+            <li>Introduction to Image data</li>
+            <li>Introduction to
+              Convolutional Neural Networks</li>
+            <li>Famous CNN architectures</li>
+            <li>Transfer Learning</li>
+            <li>Object detection</li>
+            <li>Semantic segmentation</li>
+            <li>Instance Segmentation</li>
+            <li>Other variants of convolution</li>
+            <li> Metric Learning</li>
+            <li>Siamese Networks</li>
+            <li>Triplet Loss</li>
+        </p>
+        </div>
+        <button class="accordion">Section 4 C: Natural Language Processing</button>
+        <div class="panel">
+          <p>
+            <li> Introduction to NLP Preprocessing text data Bag of Words Model</li>
+            <li>TF-IDF</li>
+            <li>N-grams</li>
+            <li>Word2Vec</li>
+            <li>GLOVE</li>
+            <li> POS Tagging & Named
+              Entity Recognition
+              Introduction to Sequential
+              models</li>
+            <li> Need for memory in neural
+              networks</li>
+            <li>Types of sequential models
+              – One to many, many to
+              one, many to many
+              Recurrent Neuralnetworks
+              (RNNs)</li>
+              <li>Long Short Term
+                Memory (LSTM)</li>
+              <li>GRU</li>
+              <li>Applications of LSTMs</li>
+              <li>Sentiment analysis
+                using LSTM</li>
+              <li>Time series analysis</li>
+              <li>Neural Machine
+                Translation</li>
+              <li>Advanced Language
+                Models</li>
+              <li>Transfer Learning</li>
+              <li>Pretrained Models</li>
+              <li>Transformer models</li>
+        </p>
+        </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+
+        
+
+        <button class="accordion"><b>INDUSTRY STANDARD PROJECTS</b></button>
+        <button class="accordion">1. BACK ORDERS</button>
+        <div class="panel">
+          <p>
+            Domain: Supply Chain
+            Management
+            Learn how predictive
+            analytics can be used by
+            supply chain management
+            team to identify back orders
+            products even before sales
+            take place and have effective
+            supply chain management.
+        </p>
+        </div>
+
+        <button class="accordion">2. TERM DEPOSIT
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Banking
+            Use analytics to identify
+            whether the bank
+            customer subscribes to a
+            term deposit or not.
+            Research and analyse data
+            from a marketing
+            campaign to gain valuable
+            insights.
+        </p>
+        </div>
+
+        <button class="accordion">3. IMDB MOVIE
+          ANALYSIS</button>
+
+        <div class="panel">
+          <p>
+            Domain: Entertainment
+            Analyse movie data from the
+            past hundred years and find
+            out various insights to
+            determine what makes a
+            movie do well.
+        </p>
+        </div>
+
+
+        <button class="accordion">4. CAR PRICES
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Automobile
+            Learning how one variable
+            can be predicted using
+            several other variables
+            through a car prices
+            dataset where you will
+            predict the prices of car
+            based on various factors.
+        </p>
+        </div>
+
+
+        <button class="accordion">5. FRAUD
+          DETECTION
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Banking
+            Decline fraud transactions on a
+            credit card in real time to
+            minimize the losses so that
+            customers are not charged for
+            items that they did not purchase.
+            Learners will able to build a
+            model to recognize fraudulent
+            credit card transactions using
+            ML.
+        </p>
+        </div>
+
+        <button class="accordion">6. Recommendation System
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Marketing
+            Learn to build a
+            ecommendation system
+            using popularity based and
+            collaborative filtering
+            methods to recommend
+            personalised products to
+            user.
+        </p>
+        </div>
+
+
+        <button class="accordion">7. TELECOM CHURN
+      
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Customer Retention
+            Telecom companies often face
+            the problem of churning
+            customers due to the
+            competitive nature of the
+            industry. Help a telecom
+            company identify customers
+            that are likely to churn and
+            make data driven strategies to
+            retain them.
+        </p>
+        </div>
+
+
+
+        <button class="accordion">8. RETAIL-GAINT
+          SALES FORECASTING
+   
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Retail
+Help a retail-gaint to have a
+clear idea of how their sales
+will look like in the future and
+take informed decisions
+        </p>
+        </div>
+
+        <button class="accordion">9. GESTURE
+          RECGNITION
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Computer Vision
+            Learners will build a gesture
+            recognition model for a smart
+            TV to recognise 5 hand
+            gestures using a 3D
+            Convolutional network
+        </p>
+        </div>
+
+        <button class="accordion">10. IMAGE
+          CAPTIONING
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Computer Vision
+            Build a model which will
+            caption a given image and
+            describe it in sentences in a
+            detailed way like objects
+            present the actions they are
+            doing etc.
+        </p>
+        </div>
+
+        <button class="accordion">11. SPEECH
+          RECOGNITION
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Banking
+            Decline fraud transactions on a
+            credit card in real time to
+            minimize the losses so that
+            customers are not charged for
+            items that they did not purchase.
+            Learners will able to build a
+            model to recognize fraudulent
+            credit card transactions using
+            ML.
+        </p>
+        </div>
+
+        <button class="accordion">12. SENTIMENT
+          ANALYSIS
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: E Commerce
+Learn to perform a sentiment
+analysis on product reviews
+from Amazon using NLP
+& amp; Machine learning.
+This assignment will be
+focused to give you a
+business understanding on
+how to do product
+optimisation using NLP.
+        </p>
+        </div>
+
+        <button class="accordion">13. NEWS ARTICLES
+          CLASSIFICATION
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Media
+            Learn to perform topic
+            modelling for discovering the
+            abstract topics that occur in
+            collection documents. Learn
+            to use Latent Dirichlet
+            Allocation (LDA) to classify
+            text in a document to a
+            particular topic.
+        </p>
+        </div>
+
+
+        <button class="accordion">14. SARCASM
+          DETECTION
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Social Media
+            Many tweets are replies to other
+            tweets and detecting sarcasm in
+            these requires the availability of
+            contextual tweets. In this hands-on
+            project, the goal is to build a model
+            to detect whether a sentence is
+            sarcastic or not, using Bidirectional
+            LSTMs.
+        </p>
+        </div>
+
+        <button class="accordion">15. CHATBOT
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: EdTech
+            Imagine if you could learn
+            Machine Learning algorithms
+            and prepare for interview
+            questions without opening
+            Google. Build your own
+            Learning Agent Chatbot with
+            the help of RASA - an open
+            source framework and
+            deploy it on Slack
+        </p>
+        </div>
+
+        <button class="accordion">16. PNEUMONIA
+          IDENTIFIER
+
+        </button>
+        <div class="panel">
+          <p>
+            Domain: Healthcare
+            To build an image classifier
+            and object detection model
+            which can classify an chest X
+            ray image into with/without
+            pneumonia disease and
+            identify the location of the
+            chest X ray where the
+            disease is localised by
+            publishing a bounding box
+            around it.
+        </p>
+        </div>
+     
+
+
+
+        <div class="mx-4 pt-5">
+          <h2 class="pb-2 t-color mb-4 b-color"><b>Meet your Faculty</b></h2>
+         
+          </div>
+        
+        <hr>
+        
+        <div class="container-fluid py-4">
+            <div class="row">
+              <div class="col-md-3">
+                <img src="images/ravi sir.jpg" alt="" class="ravi-sir1" height="150px">
+                <h3 class="fw-normal mt-3">Ravindrababu Ravula</h3>
+                <h5 class="fw-normal mt-3">ME, IISc</h5>
+               
+              </div>
+              <div class="col-md-3"> <div class="col-md-3">
+                <img src="images/Krishna.png" alt="" class="ravi-sir1" height="150px">
+                <h3 class="fw-normal mt-3">Krishna&nbsp;Swamy Jalla</h3>
+                <h5 class="fw-normal mt-3">IIT,&nbsp;Bombay</h5>  
+               
+              </div></div>
+              <div class="col-md-3">
+                <img src="images/akash.png" alt="" class="ravi-sir1" height="150px">
+                <h3 class="fw-normal mt-3">Akash Pandey</h3>
+                <h5 class="fw-normal mt-3">IIT&nbsp;KANPUR</h5>
+               
+              </div>
+              <div class="col-md-3"> <div class="col-md-3">
+                <img src="images/shubham.png" alt="" class="ravi-sir1" height="150px">
+                <h2 class="fw-normal mt-3">Shubham&nbsp;Jaiswal</h2>
+                <h5 class="fw-normal mt-3">IIT&nbsp;BOMBAY</h5>
+               
+              </div></div>
+              
+          </div>
+          </div>
+  
+  
+          <div class="container-fluid py-4">
+            <div class="row">
+              
+              <div class="col-md-3"> <div class="col-md-3">
+                <img src="images/Syam.png" alt="" class="ravi-sir1" height="150px">
+                <h3 class="fw-normal mt-3">Syam&nbsp;Jalla</h3>
+                <h5 class="fw-normal mt-3">IIIT&nbsp;MADRAS</h5>  
+               
+              </div></div>
+              <div class="col-md-3"> <div class="col-md-3">
+                <img src="images/abhishek.png" alt="" class="ravi-sir1" height="150px">
+                <h2 class="fw-normal mt-3">Abhishek&nbsp;Potnis</h2>
+                <h5 class="fw-normal mt-3">IIT&nbsp;BOMBAY</h5>
+               
+              </div></div>
+            
+              
+          </div>
+          </div>
+  
+
+
+
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top footer ">
+  <div class="col mb-3">
+    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <h5 class="text-white">©Ravindra Babu Ravula</h5>
+  </div>
+
+  <div class="col mb-3">
+
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+</footer> 
+</div>
+
+
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+      
+</body>
+</html>

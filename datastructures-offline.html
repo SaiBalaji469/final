@@ -1,0 +1,657 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,300&family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="../style.css">
+    <style>
+        .accordion {
+            background-color: #fffee3;
+          color: #444;
+          cursor: pointer;
+          padding: 18px;
+          width: 100%;
+          border: none;
+          text-align: left;
+          outline: none;
+          font-size: 15px;
+          transition: 0.4s;
+          
+        }
+        
+        .active, .accordion:hover {
+          background-color: #FFF78A;
+          /* border-bottom: #212529 solid 0.5px; */
+        }
+        
+        .panel {
+          padding: 0 18px;
+          background-color: rgb(237, 238, 219);
+          max-height: 0;
+          overflow: hidden;
+          transition: max-height 0.2s ease-out;
+        }
+        .heading{
+            text-decoration: underline;
+        }
+        .b-color{
+            background-color:#fbeeac;
+}
+      body{
+        font-family: 'DM Sans', sans-serif;
+font-family: 'Roboto', sans-serif;
+      }
+      .pricing{
+        display: flex;
+        gap: 50px;
+      }
+      .price{
+        margin-left: 0;
+        margin-top: 30px;
+        height: 630px;
+        width: 430px;
+      }
+      .card-background{
+        background-color: #f6eec3;
+      }
+      .para{
+        width: 100%;
+      }
+      button{
+    
+    box-shadow: 0 8px 6px -6px black;
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 5px 10px 0px inset;
+  
+  
+      }
+      .sai{
+        display: flex;
+        justify-content: center;
+      }
+      .ravi-sir1{
+    
+    border-radius: 50%;
+    box-shadow: 0px 25px 20px -20px rgba(0, 0, 0, 0.45);
+}
+.footer{
+    background-color: 	#28282B;
+    color: aliceblue;
+}
+.card:hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border:  black 2px solid;
+}
+        </style>
+    <title>Raudra</title>
+</head>
+<body class="b-color">
+  <div  style="overflow: hidden;">
+    <header class="p-3 text-bg-dark" >
+        <div class="container-fluid" >
+          <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+            <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
+            <img src="Screenshot 2023-12-22 102324.png" height="40px" alt="">
+            </a>
+    
+            <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+              <li><a href="index.html" class="nav-link px-2 text-warning"><b>Raudra</b></a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Buy a Course</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">Study Material</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">FAQs</a></li>
+              <li><a href="#" class="nav-link px-2 text-white">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+
+      <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-6"><div class="pricing">
+              <div class="p-5 text-center">
+                <div class="container py-5">
+                  <h1 class="heading mb-3" style="color: 
+                  #212529;">DSA in Java</h1>
+                  <p class="col-lg-8 mx-auto lead para">
+                      <b>Embark on a journey into the core of computer science with our comprehensive Data Structures and Algorithms course in Java. Whether you're a novice programmer seeking a solid foundation or an experienced developer aiming to sharpen your skills, this course is tailored to meet your learning objectives.
+                   </b>
+                  </p>
+                  <p class="col-lg-8 mx-auto lead para"><b>
+                    Our Data Structures and Algorithms in Java course is designed to equip you with a profound understanding of fundamental data structures, algorithmic principles, and their implementation using Java. Throughout this course, you will explore essential concepts, solve complex problems, and refine your coding abilities.
+                  </b></p>
+                </div>
+              </div>
+            </div></div>
+            <div class="col-md-6">  
+              <div class="sai">
+              <div class="card price card-background">
+              <img src="images/GATE LECTURES LIVE.png" class="card-img-top" alt="...">
+              <div class="card-body ">
+                <h5 class="card-title">DSA using Java ( Offline )</h5>
+                <p class="card-text">We teach all important Data Structures and algorithms with problems.</p>
+              
+                  <h5>This Course Includes :</h5>
+                  <ul>
+                    <li>No Pre-requisite Required</li>
+                    <li>LIVE classes & mentorship sessions</li>
+                    <li>LIVE Revision & Doubts sessions</li>
+                    <li>with Doubt Assistance</li>
+                    <li>Test series</li>
+                  </ul>
+                <h4>₹50,000</h4>
+                <a href="#" class="btn btn-warning">Enroll Now</a>
+              </div>
+            </div></div></div>
+    
+        </div></div>
+        </div>
+
+      </div>
+
+
+    
+
+      
+    <hr>
+
+
+      <div class="mx-4 pt-5">
+        <h2 class="pb-2 t-color mb-4 b-color"><b>Syllabus</b></h2><hr>
+       
+        </div>
+ 
+      <button class="accordion">Section 1: Array</button>
+<div class="panel"> 
+  <p>
+    <li>Maximum Subarray/ Maximum Sum Subarray/ Kadanes Algorithm</li>
+    <li>Maximum Product Subarray</li>
+    <li>Contains Duplicate</li>
+    <li>Best Time to Buy and Sell the Stocks - 1</li>
+    <li>Best Time to Buy and Sell the Stocks - 2</li>
+    <li>Best Time to Buy and Sell the Stocks - 3</li>
+    <li>Missing Number</li>
+    <li>Two Sum</li>
+    <li>3 Sum</li>
+    <li>3 Sum Closest</li>
+    <li>Container With Most Water</li>
+    <li>Longest Consecutive Sequence</li>
+    <li>Product of Array Except for Self</li>
+    <li>Intersection of two Arrays</li>
+    <li>Next Permutation</li>
+    <li>Magic Index (Find index in sorted array such that A[i]=i)</li>
+    <li>Maximum Sum Rectangle</li>
+    <li>Merge sorted arrays (Update the first array and return it)</li>
+    <li>Equilibrium Index in an Array</li>
+    <li>Rotate Array</li>
+    <li>Sort Colors (Dutch National Flag Problem)</li>
+    <li>Squares of a Sorted Array</li>
+    <li>Majority Element (Moore's Voting Algorithm)</li>
+    <li>Majority Element II (Moore's Voting Algorithm)</li>
+    <li>Next Greater Element III</li>
+    <li>Max Chunks To Make Sorted</li>
+    <li>Max Chunks To Make Sorted II</li>
+    <li>Count Inversions</li>
+    <li>First Missing Positive</li>
+    <li>Repeat and Missing Number Array</li>
+    <li>Max sum path in two arrays or Get the Maximum Score</li>
+    <li>Pairs of Songs With Total Durations Divisible by 60</li>
+    <li>Subarray Sum Equals K</li>
+    <li>Rectangle Overlap</li>
+    <li>01 Matrix</li>
+    <li>Find the Duplicate Number</li>
+    <li>Count Numbers with Unique Digits</li>
+    <li>Distribute Candies</li>
+    <li>Contiguous Array</li>
+    <li>Permutations</li>
+    <li>Jump Game II</li>
+    <li>Transpose Matrix</li>
+    <li>Common Elements from 3 Sorted Arrays</li>
+    <li>Pascals Triangle</li>
+    <li>Insert Delete GetRandom in O(1)</li>
+    <li>N Queens</li>
+    <li>Sign of the Product of an Array</li>
+    <li>Find N Unique Integers Sum up to Zero</li>
+    <li>Shuffle an Array (Fisher Yates Algorithm)</li>
+    <li>Count Primes</li>
+    <li>Power of Three</li>
+    <li>Hamming Distance</li>
+    <li>Excel Sheet Column Number</li>
+    <li>Excel Sheet Column Title</li>
+    <li>Happy Number</li>
+    <li>LRU Cache</li>
+    <li>Move Zeroes (With minimum swaps)</li>
+    <li>Remove Duplicates from Sorted Array</li>
+    <li>Segregate Even and Odd numbers</li>
+    <li>Subarray with 0 sum exist or not</li>
+    <li>Set Matrix Zeroes</li>
+    <li>Spiral Matrix</li>
+    <li>Rotate Image</li>
+  </p>
+</div>
+       
+
+<button class="accordion">Section 2: Strings</button>
+<div class="panel">
+  <p>
+    <li>Count binary strings of length n without consecutive 1's.</li>
+    <li>Generate all combinations of well-formed parentheses with n pairs. </li>
+    <li>Find minimum swaps to make a binary string alternating.</li>
+    <li>Reverse words in a given string separated by dots.</li>
+    <li>Reverse words in a string.</li>
+    <li>Remove duplicate letters or find the smallest subsequence of
+        distinct characters.</li>
+    <li>Convert a string to an integer (atoi).</li>
+    <li>Length of the last word in a string.</li>
+    <li>Run Length Encoding.</li>
+    <li>Longest Common Prefix.</li>
+    <li>Largest Alphabetic Character present in the String.</li>
+    <li>Minimum Number of Moves to Make Palindrome.</li>
+    <li>Permutation in String. 14 Roman to Integer. 15 Integer to Roman.</li>
+    <li>Palindrome Partitioning. 17 First Unique Character in a String.</li>
+    <li>Valid Tic Tac Toe State. </li>
+    <li>Find the Index of the First Occurrence in a String or Implement strStr().</li>
+    <li>Find All Anagrams in a String</li>
+    <li>Longest Valid Parentheses.</li>
+    <li>Group Anagrams</li>
+    <li>Longest Palindromic Substring</li>
+    <li>Palindromic Substrings</li>
+    <li>Encode and Decode Strings</li>
+  </p>
+</div>
+
+<button class="accordion">Section 3: Backtracking
+</button>
+<div class="panel">
+  <p>
+    <li>Combination Sum</li>
+    <li>Combination Sum 2</li>
+    <li>Word Search</li>
+    <li>Letter Combinations of a Phone Number.</li>
+    <li>Find all permutations of a string where each character is treated as unique.</li>
+    <li>Find all permutations of a string without duplicates.</li>
+  </p>
+</div>
+
+<button class="accordion">Section 4: Bit Manipulation</button>
+<div class="panel">
+  <p>
+    <li>Sum of Two Integers</li>
+    <li>Number of 1 Bits/ Brian Kernighan's Algorithm/ Number of set Bits/ Hamming
+        Weight/ Population Count</li>
+    <li>Counting Bits</li>
+    <li>Reverse Bits</li>
+  </p>
+</div>
+
+<button class="accordion">Section 5: Heaps
+</button>
+<div class="panel">
+  <p>
+    <li>Kth Largest/Smallest Element in the array.</li>
+    <li>Sort an Almost Sorted Array. 3 Top K Frequent Numbers.</li>
+    <li>Top K Frequent Elements from a Stream. 5 Sort Array by Increasing Frequency.</li>
+    <li>K Closest Points to Origin. 7 Connect Ropes to Minimize the Cost.</li>
+    <li>The sum of Elements between k1 smallest and k2 smallest numbers.</li>
+    <li>Kth Largest Element in a Stream.</li>
+    <li>Find K Closest Elements</li>
+    <li>11 Merge K Sorted Lists</li>
+    <li>12 Find Median from Data Stream</li>
+
+    </p>
+</div>
+
+
+
+<button class="accordion">Section 6: LinkedList
+</button>
+<div class="panel">
+  <p>
+    <li>Reverse a Linked List</li>
+    <li>Detect Cycle in a Linked List</li>
+    <li>Remove Nth Node From End Of List</li>
+    <li>Clone a Linked List with a Random Pointer</li>
+    <li>Find the Intersection of Two Linked Lists</li>
+    <li>Merge Two Sorted Lists</li>
+    <li>Middle of the Linked List</li>
+    <li>Add Two Numbers Represented in Linked List (Left to Right)</li>
+    <li>Add Two Numbers Represented in Linked List (Right to Left)</li>
+    <li>Linked List Cycle II</li>
+    <li>Remove Duplicates from Sorted List</li>
+    <li>Remove Duplicates from Sorted List - II</li>
+    <li>Palindrome Linked List</li>
+    <li>Add Two Numbers II</li>
+    <li>Odd Even Linked List</li>
+    <li>Reverse Nodes in k-Group</li>
+    <li>Reverse Nodes in k-Group - Approach 2</li>
+    <li>Merge K Sorted Lists</li>
+    <li>Reverse Linked List II</li>
+    <li>Swap Nodes in Pairs</li>
+    <li>Convert Binary Number in a Linked List to Integer</li>
+    <li>Partition List</li>
+    <li>Sort List</li>
+    <li>Reorder List</li>
+    </p>
+</div>
+
+<button class="accordion">Section 7: Stack
+</button>
+<div class="panel">
+  <p>
+    <li>Valid Parentheses</li>
+    <li>Next Largest Element to Right or Next Greater to Right</li>
+    <li>Next Largest Element to Left or Next Greater to Left</li>
+    <li>Next Smallest Element to Left or Next Smaller to the Left</li>
+    <li>Next Smallest Element to Right or Next Smaller to the Right</li>
+    <li>Stock Span Problem (consecutive smaller or equal before it -> next greater left)</li>
+    <li>Maximum Area Histogram</li>
+    <li>Maximum Area Rectangle in Binary Matrix or Maximum Area Rectangle with all 1's</li>
+    <li>Trapping Rain Water Problem</li>
+    <li>Minimum Element in Stack with Extra Space</li>
+    <li>Minimum Element in Stack in O(1) Space Complexity</li>
+    <li>Implement Queue using Stack</li>
+    <li>Implement Stack using Queues</li>
+    <li>Daily Temperatures</li>
+    <li>Min Stack</li>
+    <li>Decode String</li>
+    <li>Remove All Occurrences of a Substring</li>
+    <li>Minimum invalid parentheses to remove to make valid parentheses</li>
+    <li>Minimum Add to Make Parentheses Valid</li>
+  </p>
+</div>
+
+<button class="accordion">Section 8: Binary Search</button>
+<div class="panel">
+  <p>
+    <li>Next Greatest Element in Sorted Array</li>
+    <li>Next Smallest Element in Sorted Array</li>
+    <li>Binary Search on Sorted Array (Ascending order)</li>
+    <li>Binary Search on Sorted Array (Descending order)</li>
+    <li>Find First and Last Occurrence in Sorted Array</li>
+    <li>Count Occurrences in Sorted Array</li>
+    <li>Rotation Count in Rotated Sorted Array</li>
+    <li>Search in Rotated Sorted Array</li>
+    <li>Search in Rotated Sorted Array II</li>
+    <li>Search in Nearly Sorted Array</li>
+    <li>Single Element in Sorted Array</li>
+    <li>Find Floor of Element in Sorted Array</li>
+    <li>Find Ciel of Element in Sorted Array</li>
+    <li>Next Alphabetical Element in Sorted Array</li>
+    <li>Find Position of Element in Infinite Sorted Array</li>
+    <li>Index of First 1 in Infinite Binary Sorted Array</li>
+    <li>Minimum Difference Element in Sorted Array</li>
+    <li>Peak Element in Array</li>
+    <li>Maximum Element in Bitonic Array</li>
+    <li>Search in Bitonic Array</li>
+    <li>Search in Row-Column Sorted Matrix</li>
+    <li>Search in Row-Column Sorted Matrix (Modified)</li>
+    <li>Search Insert Position</li>
+    <li>Pow(x, n)</li>
+    <li>Smallest Missing Number in Sorted Array</li>
+    <li>First Bad Version</li>
+    <li>Row with Maximum number of 1's</li>
+    <li>Find Minimum in Rotated Sorted Array</li>
+    <li>Longest Increasing Subsequence</li>
+  </p>
+</div>
+
+<button class="accordion">Section 9: Binary Search (Search Space)
+</button>
+<div class="panel">
+  <p>
+    <li>Allocate Minimum Number of Pages</li>
+    <li>Kth Smallest Element in a Sorted Matrix</li>
+    <li>The Median of Two Sorted Arrays</li>
+    <li>Square Root of a Number</li>
+    <li>Capacity To Ship Packages Within D Days</li>
+    </p>
+</div>
+
+<button class="accordion">Section 10: Dynamic Programming
+</button>
+<div class="panel">
+  <p>
+    <li>Climbing Stairs (Count ways to reach the n-th stairs)</li>
+    <li>House Robber</li>
+    <li>House Robber II</li>
+    <li>Decode Ways</li>
+    <li>Longest Increasing Subsequence</li>
+    <li>Word Break Problem</li>
+    <li>01 knapsack</li>
+    <li>Subset Sum</li>
+    <li>Equal Sum Partition Problem</li>
+    <li>Count of Subsets with Sum equal to X</li>
+    <li>Minimum Subset Sum Difference</li>
+    <li>Count the number of subsets with a given difference</li>
+    <li>Target Sum</li>
+    <li>Unbounded Knapsack</li>
+    <li>Rod Cutting Problem</li>
+    <li>Coin Change - Maximum Number of Ways</li>
+    <li>Coin Change - Minimum Number of Coins</li>
+    <li>Longest Common Subsequence</li>
+    <li>Print Longest Common Subsequence</li>
+    <li>Shortest Common Supersequence</li>
+    <li>Print Shortest Common SuperSequence</li>
+    <li>Minimum Number of Insertions and Deletions</li>
+    <li>Longest Palindromic Subsequence</li>
+    <li>Minimum Number of Deletions to make a Palindrome</li>
+    <li>Number of Insertions to make a Palindrome</li>
+    <li>Longest Repeating Subsequence</li>
+    <li>Sequence Pattern Matching</li>
+    <li>Longest Common Substring</li>
+    <li>Matrix Chain Multiplication</li>
+    <li>Maximal Square (Maximum Area Square)</li>
+    <li>Interleaving String</li>
+    <li>Edit Distance</li>
+    <li>Maximum Length of a Concatenated String with Unique Characters</li>
+    <li>WildCard Matching</li>
+    <li>Unique Paths</li>
+
+  </p>
+</div>
+<button class="accordion">Section 11: Greedy
+</button>
+<div class="panel">
+  <p>
+    <li>JUMP Game</li>
+    <li>Jump Game II</li>
+    <li>Insert Interval</li>
+    <li>Merge Intervals</li>
+    <li>Non-overlapping intervals</li>
+    <li>Meeting Rooms 1</li>
+    <li>Meeting Rooms 2</li>
+    <li>Minimum Platforms</li>
+    </p>
+</div>
+
+<button class="accordion">Section 12: Sliding Window
+</button>
+<div class="panel">
+  <p>
+    <li>Problem Statement</li>
+    <li>Maximum Sum Subarray of size K</li>
+    <li>First Negative Number in every window of size K</li>
+    <li>Valid Anagram</li>
+    <li>Count Occurrences Of Anagrams</li>
+    <li>Maximum numbers from all the subarrays of size k from the given array</li>
+    <li>Largest Subarray of Sum K (Variable size sliding window)</li>
+    <li>Longest K unique characters substring</li>
+    <li>Longest Substring Without Repeating Characters</li>
+    <li>Minimum Window Substring</li>
+    <li>Minimum Length of subarray with at least k unique numbers</li>
+    <li>Longest Repeating Character Replacement</li>
+    </p>
+</div>
+
+<button class="accordion">Section 11: Greedy
+</button>
+<div class="panel">
+  <p>
+    <li>Binary Tree PreOrder Traversal</li>
+    <li>Binary Tree InOrder Traversal</li>
+    <li>Binary Tree PostOrder Traversal</li>
+    <li>Level Order Traversal of a Binary Tree</li>
+    <li>Maximum Depth of Binary Tree or Height of a Binary Tree</li>
+    <li>Minimum Depth of Binary Tree</li>
+    <li>Count Complete Tree Nodes</li>
+    <li>Count Leaves in Binary Tree</li>
+    <li>Count Good Nodes in Binary Tree</li>
+    <li>Max and Min Element in the Binary Tree</li>
+    <li>Invert/Flip Binary Tree / Mirror Tree</li>
+    <li>Subtree of Another Tree</li>
+    <li>Same Tree or Determine if two trees are Identical</li>
+    <li>Left view of a Binary Tree</li>
+    <li>Right view of a Binary Tree</li>
+    <li>Top View of a Binary Tree</li>
+    <li>Bottom View of a Binary Tree</li>
+    <li>Construct Binary Tree from Preorder and Inorder Traversal</li>
+    <li>Cousins in a Binary Tree (Check if two nodes are Cousins)</li>
+    <li>Convert a Binary Tree to a Doubly Linked List</li>
+    <li>Diameter of a Binary Tree</li>
+    <li>Lowest Common Ancestor in a Binary Tree</li>
+    <li>Delete Leaves with a Given Value</li>
+    <li>Lowest Common Ancestor of Three nodes in a Binary Tree</li>
+    <li>Connect nodes at the same level</li>
+    <li>Check if binary tree is height balanced or not</li>
+    <li>Check if there exists a path sum from Root to Leaf which is equal to given targetSum</li>
+    <li>Validate Binary Search Tree</li>
+    <li>Kth Smallest Element in a BST</li>
+    <li>Symmetric Tree</li>
+    <li>Binary Tree Maximum Path Sum (From any node to any node)</li>
+    <li>Serialize and Deserialize Binary Tree</li>
+    <li>Vertical Traversal of Binary Tree</li>
+    <li>Binary Tree Zigzag Level Order Traversal</li>
+    <li>K distance from root</li>
+    <li>Ceil in BST</li>
+    <li>Lowest Common Ancestor in a BST</li>
+    <li>Convert a sorted array to BST</li>
+    <li>Convert Sorted Array to Binary Search Tree</li>
+    <li>Two Sum IV - Input is a BST</li>
+    <li>Check if it is Sum Tree</li>
+    <li>House Robber 3</li>
+    </p>
+</div>
+
+<button class="accordion">Section 13: Graphs
+</button>
+<div class="panel">
+  <p>
+    <li>Adjacency Matrix and Adjacency List</li>
+    <li>Minimum Distance from Source to Destination</li>
+    <li>Number of Connected Components</li>
+    <li>BFS of Graph</li>
+    <li>DFS of Graph</li>
+    <li>Detect Cycle in an Undirected Graph</li>
+    <li>Detect Cycle in a Directed Graph</li>
+    <li>Topological Sort in a Directed Acyclic Graph (DFS)</li>
+    <li>Topological Sort in a Directed Acyclic Graph (BFS)</li>
+    <li>Alien Dictionary</li>
+    <li>Shortest Path in an Unweighted Graph</li>
+    <li>Number of Islands</li>
+    <li>Pacific Atlantic Water Flow</li>
+    <li>Course Schedule I</li>
+    <li>Course Schedule II</li>
+    <li>Graph Valid Tree</li>
+    <li>Number of Connected Components in an Undirected Graph</li>
+    <li>Clone Graph Link</li>
+    <li>Find All Possible Recipes from Given Supplies</li>
+    <li>Rotten Oranges</li>
+    </p>
+</div>
+
+<div class="mx-4 pt-5">
+  <h2 class="pb-2 t-color mb-4 b-color"><b>Meet your Faculty</b></h2>
+ 
+  </div>
+
+<hr>
+
+<div class="container py-4">
+  <div class="row">
+    <div class="col-md-3">
+      <img src="images/ravi sir.jpg" alt="" class="ravi-sir1" height="150px">
+      <h2 class="fw-normal mt-3">Ravindrababu Ravula</h2>
+      <h5 class="fw-normal mt-3">ME, IISc</h5>
+     
+    </div>
+    <div class="col-md-3"></div>
+    <div class="col-md-3"></div>
+    
+</div>
+</div>
+
+
+
+<footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 border-top footer ">
+  <div class="col mb-3">
+    <a href="/" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+      <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+    </a>
+    <h5 class="text-white">©Ravindra Babu Ravula</h5>
+  </div>
+
+  <div class="col mb-3">
+
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+
+  <div class="col mb-3">
+    <h5>Section</h5>
+    <ul class="nav flex-column">
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Home</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Features</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">Pricing</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">FAQs</a></li>
+      <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-white">About</a></li>
+    </ul>
+  </div>
+</footer> 
+</div>
+
+
+
+      <script>
+        var acc = document.getElementsByClassName("accordion");
+        var i;
+        
+        for (i = 0; i < acc.length; i++) {
+          acc[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var panel = this.nextElementSibling;
+            if (panel.style.maxHeight) {
+              panel.style.maxHeight = null;
+            } else {
+              panel.style.maxHeight = panel.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+      
+</body>
+</html>
